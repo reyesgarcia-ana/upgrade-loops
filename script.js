@@ -155,7 +155,31 @@ for (let i = 0; i < toys.length; i++) {
 
 console.log(toys);
 
-    
+
+// Iteration#7 ---------------------------------------------------
+// Usa un bucle for...of para recorrer todos los juguetes y añade los que tengan más 
+// de 15 ventas (sellCount) al array popularToys. Imprimelo por consola.
+
+const popularToys = [];
+
+const toys2 = [
+	{id: 5, name: 'Buzz MyYear', sellCount: 10}, 
+	{id: 11, name: 'Action Woman', sellCount: 12}, 
+	{id: 23, name: 'Barbie Man', sellCount: 16}, 
+    {id: 23, name: 'Barbie Man', sellCount: 16},
+	{id: 40, name: 'El gato con Guantes', sellCount: 8},
+	{id: 40, name: 'El gato felix', sellCount: 35}
+];
+
+for (element of toys2) {
+
+    if (element.sellCount > 15) {
+
+        popularToys.push(element);
+    }
+};
+
+console.log(popularToys);
 
 
 
